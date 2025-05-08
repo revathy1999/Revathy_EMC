@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Gabarito", sans-serif;
+}
+.navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  gap: 10px;
+  align-items: center;
+}
+.navbar__s1__title {
+  color: #892de1;
+}
+.navbar__s2 {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 60%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.navbar__s2 input {
+  border: none;
+  width: 100%;
+}
+.navbar__s2 input:focus {
+  outline: none;
+}
+.navbar__s3 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.categories {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.categories p {
+  background-color: #892de1;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.sale-image img {
+  width: 100%; /*to make image fit upto size which we provided before, if we not specify it, its overflowing and taking more width*/
+}
+.recommended {
+  padding: 10px;
+}
+.course-card {
+  width: 200px; /*Instead of percentage, px will be used when we resize the window automatically it will based on window size
+  in case of percentage, it will occupy that 20% and images will shrink*/
+}
+.course-card img {
+  width: 100%;
+  height: 50%;
+}
+.recommended__container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
