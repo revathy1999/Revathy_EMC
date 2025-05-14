@@ -16,7 +16,7 @@ body {
   position: sticky;
   top: 0;
   background-color: white;
-  z-index: 1000;
+  z-index: 1;
 }
 .navbar__s1 img {
   width: 80px;
@@ -33,6 +33,8 @@ body {
 .navbar__s2 input {
   border: none;
   width: 100%;
+  background-color: transparent;
+  /* default its adding white background for input, to remove that we can use transparent */
 }
 .navbar__s2:hover,
 .navbar__s2 input:hover {
@@ -49,6 +51,25 @@ body {
 .navbar__s3__items:hover {
   color: #892de1;
 }
+/* My learning popup */
+.mylearning{
+position: relative;
+cursor: pointer;
+}
+.mylearning__popup{
+position: absolute;
+background-color: white;
+border: 1px solid black;
+padding: 15px;
+top: 150%;
+right: 0;
+width: 100px;
+display: none;
+}
+.mylearning:hover .mylearning__popup{
+  display: block;
+}
+
 .categories {
   display: flex;
   justify-content: space-between;
@@ -65,8 +86,23 @@ body {
   background-color: #b99ce5;
   color: black;
 }
+.sale__image{
+  position: relative;
+}
 .sale-image img {
   width: 100%; /*to make image fit upto size which we provided before, if we not specify it, its overflowing and taking more width*/
+}
+.sale__image__offer{
+  border-radius: 8px;
+    width: 350px;
+    background-color: white;
+    padding: 20px;
+    position: absolute;
+    top: 201px;
+    left: 100px;
+}
+.sale__image__offer p{
+  margin-top: 10px;
 }
 .recommended {
   padding: 10px;
