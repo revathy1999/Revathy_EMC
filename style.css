@@ -51,6 +51,9 @@ body {
 .navbar__s3__items:hover {
   color: #892de1;
 }
+.navbar__s4 img{
+  display: none;
+}
 /* My learning popup */
 .mylearning{
 position: relative;
@@ -93,17 +96,17 @@ display: none;
 .sale__image{
   position: relative;
 }
-.sale-image img {
+.sale__image img {
   width: 100%; /*to make image fit upto size which we provided before, if we not specify it, its overflowing and taking more width*/
 }
 .sale__image__offer{
   border-radius: 8px;
-    width: 350px;
+    width: 35%;
     background-color: white;
-    padding: 20px;
+    padding: 2%;
     position: absolute;
-    top: 201px;
-    left: 100px;
+    top: 30%;
+    left: 8%;
     animation-name: zoom;
     animation-duration: 2s;
     opacity: 0;
@@ -131,6 +134,9 @@ display: none;
 .course-card {
   width: 310px; /*Instead of percentage, px will be used when we resize the window automatically it will based on window size
   in case of percentage, it will occupy that 20% and images will shrink*/
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
 }
 .course-card img {
   width: 100%;
@@ -191,4 +197,31 @@ margin-top: 10px;
 }
 .footer__two p{
   margin-top: 20px;
+}
+
+
+/* Media queries */
+@media screen and (max-width:800px){
+  body{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:600px) {
+  .course-card{
+  flex-basis: 40%;
+  }
+  .categories{
+    display: none;
+  }
+  .navbar__s2, .navbar__s3{
+    display: none;
+  }
+  .navbar__s4 img{
+display: block;
+  width: 20px;
+  }
+  .sale__image__offer{
+    
+    margin-top: -30px;
+  }
 }
